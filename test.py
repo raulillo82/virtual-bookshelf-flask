@@ -61,7 +61,7 @@ with app.app_context():
 with app.app_context():
     book_to_update = db.session.execute(db.select(Book).where(Book.title == "Harry Potter")).scalar()
     book_to_update.title = "Harry Potter and the Chamber of Secrets"
-    db.session.commit() 
+    db.session.commit()
 
 #Update a Record By PRIMARY KEY
 book_id = 1
